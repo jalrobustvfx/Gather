@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Gather v0.1 — save your good finds",
+  "version": "0.9.1",
+  "version_name": "0.1",
+  "description": "A private, searchable home for links, tools, notes, and project boards.",
+  "permissions": ["activeTab", "debugger", "scripting", "storage", "unlimitedStorage", "contextMenus", "alarms"],
+  "optional_permissions": ["bookmarks"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "optional_host_permissions": ["<all_urls>", "http://*/*", "https://*/*"],
+  "action": { "default_title": "Save to Gather v0.1", "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" },
+  "commands": { "capture-page": { "suggested_key": { "default": "Alt+Shift+S" }, "description": "Capture the current page to Gather" } },
+  "options_page": "index.html"
+}

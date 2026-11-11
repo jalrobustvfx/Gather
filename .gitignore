@@ -1,0 +1,28 @@
+# Local collections, recovery copies, and backups
+.gather/
+gather-*.json
+*backup*.json
+*.log
+.env
+.env.*
+
+# Generated release archives and filming assets
+dist/
+video-demo/
+*.mp4
+*.wav
+*.mp3
+
+# Runtime and editor files
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local design references and working screenshots
+/*.png
+/*.jpg
